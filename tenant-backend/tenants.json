@@ -4,13 +4,15 @@
     "name": "Acme Corp",
     "logo": "/logos/acme.png",
     "theme": "mint",
-    "chatwootWidgetId": "acme-widget-id"
+    "chatwootWidgetId": "sZZsYCPifpym86sUzR8NfpaF",
+    "chatwootBaseUrl": "http://localhost:3000"
   },
   {
     "id": "globex",
     "name": "Globex Inc",
     "logo": "/logos/globex.png",
     "theme": "tangerine",
-    "chatwootWidgetId": "globex-widget-id"
+    "chatwootWidgetId": "globex-widget-id",
+    "chatwootBaseUrl": ""
   }
 ]

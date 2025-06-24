@@ -51,7 +51,24 @@ app.post('/api/tenants', express.json(), (req, res) => {
     res.status(500).json({ error: 'Failed to create tenant' });
   }
 });
-
+app.patch('/api/tenants/:tenantId', express.json(), (req, res) => {
+  const tenantId = req.params.tenantId;
+  const updatedTenant = req.body;
+  try {
+    const tenants = loadTenants();
+    const index = tenants.findIndex(t => t.id === tenantId);
+    if (index !== -1) {
+      tenants[index] = { ...tenants[index], ...updatedTenant };
+      saveTenants(tenants);
+      res.json(tenants[index]);
+    } else {
+      res.status(404).json({ error: 'Tenant not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to update tenant' });
+  }
+}
+);
 
 
 
