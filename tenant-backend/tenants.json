@@ -1,0 +1,16 @@
+[
+  {
+    "id": "acme",
+    "name": "Acme Corp",
+    "logo": "/logos/acme.png",
+    "theme": "mint",
+    "chatwootWidgetId": "acme-widget-id"
+  },
+  {
+    "id": "globex",
+    "name": "Globex Inc",
+    "logo": "/logos/globex.png",
+    "theme": "tangerine",
+    "chatwootWidgetId": "globex-widget-id"
+  }
+]
