@@ -27,7 +27,7 @@ docker compose run --rm rails bundle exec rails db:chatwoot_prepare
 docker compose up -d
 ```
 --
-if the clone fails to run the docker container clone the affine source code from https://github.com/Lucifer4255/AFFiNE#
+if the clone fails to run the docker container clone the affine source code from https://github.com/Lucifer4255/AFFiNE# or copy the .git file from source because the build works on submodules
 
 This will start:
 - ✅ AFFiNE (on `http://localhost:8080`)
