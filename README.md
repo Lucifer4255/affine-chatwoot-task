@@ -11,7 +11,7 @@ This project integrates [AFFiNE](https://github.com/toeverything/AFFiNE) with [C
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/affine-chatwoot-white-label.git
+git clone https://github.com/[your-username]/affine-chatwoot-task.git
 cd affine-chatwoot-white-label
 ```
 
@@ -26,6 +26,8 @@ docker compose run --rm rails bundle exec rails db:chatwoot_prepare
 ```bash
 docker compose up -d
 ```
+--
+if the clone fails to run the docker container clone the affine source code from https://github.com/Lucifer4255/AFFiNE#
 
 This will start:
 - ✅ AFFiNE (on `http://localhost:8080`)
@@ -136,8 +138,8 @@ You need to provide:
 - Tenant info is loaded dynamically on page load via `TenantProvider`
 - Based on `?tenant=` param or subdomain
 - Injects:
-  - Theme color via `--primary-color`
-  - Logo in header
+  - Theme color via `Next-Themes`
+  - Logo via avatar.tsx component(logos served in public folder)
   - Chatwoot widget using their JS SDK and widget token
 
 ---
@@ -158,9 +160,8 @@ You need to provide:
 
 ---
 
-## ✅ Status
+## ✅ Areas of Improvement
 
-✔️ 80% Complete  
-🚧 Remaining:
 - Final styling polish
-- Optional: auto TLS for subdomain support (e.g., `acme.localhost`)
+- Improve the DOcker files for production and development build
+- improve the tenant backend with type guarding and a proper db if necessary for the job
