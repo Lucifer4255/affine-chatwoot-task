@@ -82,13 +82,6 @@ export function TenantProvider({ children }: { children: ReactNode }) {
           window.chatwootSDK.run({
             websiteToken: tenant.chatwootWidgetId!,
             baseUrl: tenant.chatwootBaseUrl!,
-            widgetStyle: {
-              position: 'right',
-              color: '#000000',
-              backgroundColor: '#ffffff',
-              borderRadius: '8px',
-              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-            },
           });
           console.log('Chatwoot widget loaded for:', tenant.id);
         }

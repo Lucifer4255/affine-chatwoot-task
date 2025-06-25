@@ -28,7 +28,7 @@ docker compose up -d
 ```
 
 This will start:
-- ✅ AFFiNE (on `http://localhost:5173`)
+- ✅ AFFiNE (on `http://localhost:8080`)
 - ✅ Chatwoot (on `http://localhost:3000`)
 - ✅ Tenant Backend (on `http://localhost:4000`)
 
@@ -49,7 +49,8 @@ This will return a list of tenants with their:
 - Name
 - Logo
 - Theme color
-- Chatwoot configuration
+- Chatwoot Widget Id
+- Chatwoot Base URL
 
 ---
 
@@ -60,10 +61,10 @@ This will return a list of tenants with their:
 
 2. Complete onboarding and create a new **Inbox** under the **Website** tab.
 
-📸 *[Insert Screenshot of Chatwoot Inbox Creation]*
+📸 *[![alt text](snip-2.png)]*
 
 3. Once created, you'll receive a **Widget Token** (e.g., `sZZsYCPifpym86sUzR8NfpaF`)
-
+📸 *[![alt text](snip-3.png)]*
 ---
 
 ### 🔗 Add Chatwoot Widget to Tenant
@@ -79,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-📸 *[Insert Screenshot of Request or Postman]*
+📸 *[![alt text](image.png)]*
 
 This associates the Chatwoot inbox with the tenant.
 
@@ -92,13 +93,13 @@ You can access tenants via:
 #### 1. Subdomain (if supported in dev)
 
 ```bash
-http://acme.localhost:5173
+http://acme.localhost:8080
 ```
 
 #### 2. URL Parameter
 
 ```bash
-http://localhost:5173/?tenant=acme
+http://localhost:8080/?tenant=acme
 ```
 
 Once loaded, you'll see:
@@ -106,7 +107,7 @@ Once loaded, you'll see:
 - ✅ Tenant logo
 - ✅ Chatwoot widget for support
 
-📸 *[Insert Screenshot of Themed Workspace]*
+📸 *[![alt text](image-1.png)]*
 
 ---
 
@@ -150,18 +151,10 @@ You need to provide:
 
 ---
 
-## 📸 Screenshots (To Add)
-
-- [ ] Chatwoot inbox creation
-- [ ] Chatwoot widget ID screen
-- [ ] PATCH request to backend
-- [ ] Themed workspace per tenant
-
----
 
 ## 🎥 Demo Video
 
-📺 [Insert your Loom/YT demo link here]
+📺 [https://www.loom.com/share/410f93602554402cb7d32e8cf3752fea?sid=d9fd3215-4780-42d1-85b9-c1b7b3493366]
 
 ---
 
