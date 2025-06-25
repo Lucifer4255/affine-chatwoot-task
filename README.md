@@ -61,7 +61,7 @@ This will return a list of tenants with their:
 1. Go to Chatwoot dashboard:  
    👉 `http://localhost:3000`
 
-2. Complete onboarding and create a new **Inbox** under the **Website** tab.
+2. Complete onboarding and create a new **Inbox** under the **Website** tab from settings.
 
 📸 *[![alt text](snip-2.png)]*
 
