@@ -1,0 +1,11 @@
+:root[data-theme='tangerine'] {
+  --primary-color: #ff9800;
+  --background-color: #fff3e0;
+  /* Add more variables as needed */
+}
+
+:root[data-theme='mint'] {
+  --primary-color: #00bfae;
+  --background-color: #e0fff7;
+  /* Add more variables as needed */
+}
