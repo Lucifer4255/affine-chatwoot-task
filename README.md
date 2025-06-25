@@ -127,7 +127,9 @@ You need to provide:
   "id": "globex",
   "name": "Globex Corp",
   "logo": "/logos/globex.svg",
-  "theme": "#3498db"
+  "theme": "#3498db",
+  "chatwootWidgetId": "EsL5CsmAHmqLwF1o9uDmmoF3",
+  "chatwootBaseUrl": "http://localhost:3000"
 }
 ```
 
