@@ -63,11 +63,11 @@ export function TenantProvider({ children }: { children: ReactNode }) {
 
   // Set CSS variable for theme color
   useEffect(() => {
-    if (tenant?.theme) {
-      document.documentElement.style.setProperty('--primary-color', tenant?.theme);
-      document.documentElement.setAttribute('data-theme', tenant?.theme);
-      console.log('Applied theme:', tenant?.theme);
-    }
+    // if (tenant?.theme) {
+    //   // document.documentElement.style.setProperty('--affine-text-primary-color', '#000000');
+    //   document.documentElement.setAttribute('data-theme', tenant?.theme);
+    //   console.log('Applied theme:', tenant?.theme);
+    // }
 
     // Inject Chatwoot script if chat config is available
     if (tenant?.chatwootWidgetId && tenant?.chatwootBaseUrl) {

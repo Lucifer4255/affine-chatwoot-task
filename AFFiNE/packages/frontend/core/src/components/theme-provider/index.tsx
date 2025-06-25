@@ -9,13 +9,17 @@ import { useTenant } from '../context/tenant-context';
 const themes = ['dark', 'light','tangerine', 'mint','dark-mint', 'dark-tangerine'];
 
 function ThemeObserver() {
-  const { resolvedTheme } = useTheme();
+  const { resolvedTheme,setTheme } = useTheme();
   const service = useService(AppThemeService);
   const tenant = useTenant();
 
   useEffect(() => {
     service.appTheme.theme$.next(resolvedTheme);
-  }, [resolvedTheme, service.appTheme.theme$]);
+    if(tenant?.tenant?.theme) {
+      setTheme(tenant.tenant.theme);
+      console.log('Applied theme:', tenant?.tenant?.theme);
+    }
+  }, [resolvedTheme, service.appTheme.theme$,tenant]);
 
   return null;
 }
