@@ -2,7 +2,7 @@
   {
     "id": "acme",
     "name": "Acme Corp",
-    "logo": "/logos/acme.png",
+    "logo": "/acme-logo.svg",
     "theme": "mint",
     "chatwootWidgetId": "sZZsYCPifpym86sUzR8NfpaF",
     "chatwootBaseUrl": "http://localhost:3000"
@@ -10,9 +10,9 @@
   {
     "id": "globex",
     "name": "Globex Inc",
-    "logo": "/logos/globex.png",
+    "logo": "/globex-logo.svg",
     "theme": "tangerine",
     "chatwootWidgetId": "globex-widget-id",
-    "chatwootBaseUrl": ""
+    "chatwootBaseUrl": "http://localhost:3000"
   }
 ]
